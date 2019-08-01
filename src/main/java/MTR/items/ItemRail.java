@@ -180,7 +180,8 @@ public class ItemRail extends ItemBase {
 				// x - x0 = m*(z - z0)
 				// x - m1*z = -m1*z1 + x1
 				// x - m2*z = -m2*z2 + x2
-				int constants1[] = { 0, -1, 1000000, 1 }, constants2[] = { 1000000, 1, 0, -1 };
+				//int constants1[] = { 0, -1, 1000000, 1 }, constants2[] = { 1000000, 1, 0, -1 };
+				int constants1[] = { 0, -1, 100, 1 }, constants2[] = { 100, 1, 0, -1 };
 				int m1 = constants1[i1], m2 = constants1[i2];
 				// determinant = a*d - c*b
 				int d = m1 - m2;
